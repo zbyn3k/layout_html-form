@@ -25,6 +25,57 @@
     >
     </script>
 
+    <form
+      class="form"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+    >
+
+      <fieldset class="form__fieldset">
+        <legend>Personal information</legend>
+        <label class="form__field">
+          Surname:
+          <input
+            type="text"
+            name="surname"
+            autocomplete="off"
+          >
+        </label>
+        <label class="form__field">
+          Name:
+          <input
+            type="text"
+            name="firstname"
+            autocomplete="off"
+          >
+        </label>
+        <label class="form__field">
+          How old are You?
+          <input
+            type="text"
+            name="age"
+            autocomplete="off"
+            min="1"
+            max="100"
+            value="12"
+          >
+        </label>
+        <label class="form__field">
+          Full date of birth:
+          <input
+            type="date"
+            name="dateOfBirth"
+          >
+        </label>
+        <label class="form__field">
+          I accept the term of the agreement:
+          <input
+            type="checkbox"
+            name="term"
+          >
+        </label>
+      </fieldset>
+    </form>
 
   </body>
 
